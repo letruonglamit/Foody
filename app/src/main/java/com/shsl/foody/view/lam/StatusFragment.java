@@ -1,4 +1,4 @@
-package com.shsl.foody;
+package com.shsl.foody.view.lam;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -15,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.shsl.foody.R;
+
 import java.util.ArrayList;
 
 
@@ -29,7 +31,7 @@ public class StatusFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initializeList();
-        getActivity().setTitle("7 Wonders of the Modern World");
+        getActivity().setTitle("7 foods of the Modern World");
     }
 
     @Override
@@ -66,7 +68,7 @@ public class StatusFragment extends Fragment {
         public MyViewHolder onCreateViewHolder(ViewGroup parent,int viewType) {
             // create a new view
             View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.recycle_items_menu, parent, false);
+                    .inflate(R.layout.items_statistic, parent, false);
             MyViewHolder holder = new MyViewHolder(view);
             return holder;
         }

@@ -8,11 +8,11 @@ import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
 import com.shsl.foody.view.lam.AccountFragment;
 import com.shsl.foody.view.lam.ManageFragment;
-import com.shsl.foody.view.lam.StatisticFragment;
+import com.shsl.foody.view.lam.StatisticsFragment;
 import com.shsl.foody.view.lam.StatusFragment;
 
 
-public class MainActivityA extends AppCompatActivity implements AHBottomNavigation.OnTabSelectedListener{
+public class MainActivity extends AppCompatActivity implements AHBottomNavigation.OnTabSelectedListener{
 
    AHBottomNavigation bottomNavigation;
 
@@ -61,11 +61,12 @@ public class MainActivityA extends AppCompatActivity implements AHBottomNavigati
             getSupportFragmentManager().beginTransaction().replace(R.id.content_id, manageFragment).commit();
         }else  if (position==2)
         {
+            StatisticsFragment statisticFragment =new StatisticsFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_id, statisticFragment).commit();
+        }else if(position == 3){
+
             AccountFragment accountFragment =new AccountFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.content_id, accountFragment).commit();
-        }else if(position == 3){
-            StatisticFragment statisticFragment =new StatisticFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_id, statisticFragment).commit();
         }
 
     }

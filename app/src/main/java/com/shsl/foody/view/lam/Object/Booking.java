@@ -1,11 +1,15 @@
-package com.shsl.foody.view.lam;
+package com.shsl.foody.view.lam.Object;
 
-public class MenuFood {
+/**
+ * Created by shsl on 5/7/17.
+ */
 
+public class Booking {
     String cardName;
     int imageResourceId;
     int isfav;
     int isturned;
+    private int price;
 
     public int getIsturned() {
         return isturned;
@@ -38,5 +42,12 @@ public class MenuFood {
     public void setImageResourceId(int imageResourceId) {
         this.imageResourceId = imageResourceId;
     }
-}
 
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+}

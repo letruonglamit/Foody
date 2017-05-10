@@ -16,15 +16,15 @@ import android.widget.TextView.OnEditorActionListener;
 
 import com.shsl.foody.R;
 
-public class DialogEditVisaDialog extends DialogFragment implements OnEditorActionListener, View.OnClickListener {
+public class BookingFoodDialog extends DialogFragment implements OnEditorActionListener, View.OnClickListener {
     private static final String TAG = "TEST";
 
     private TextView title;
-    private EditText mEditText;
+    private EditText editMessage;
     private Button btnCancel, btnOK;
     private EditVisaDialogListener mListener;
     private String strTitle;
-    public DialogEditVisaDialog(String title){
+    public BookingFoodDialog(String title){
         this.strTitle = title;
 
     }
@@ -44,16 +44,16 @@ public class DialogEditVisaDialog extends DialogFragment implements OnEditorActi
         title.setText(strTitle);
         btnCancel = (Button) view.findViewById(R.id.btn_cancel);
         btnOK = (Button) view.findViewById(R.id.btn_ok);
-        mEditText = (EditText) view.findViewById(R.id.txt_your_name);
+        editMessage = (EditText) view.findViewById(R.id.txt_your_name);
 
         /**
          * Establish keyboard
          */
-        mEditText.requestFocus();
+        editMessage.requestFocus();
         getDialog().getWindow().setSoftInputMode(LayoutParams.SOFT_INPUT_STATE_VISIBLE);
         getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 
-        mEditText.setOnEditorActionListener(this);
+        editMessage.setOnEditorActionListener(this);
 
         btnCancel.setOnClickListener(this);
         btnOK.setOnClickListener(this);
@@ -69,7 +69,7 @@ public class DialogEditVisaDialog extends DialogFragment implements OnEditorActi
         this.dismiss();
         if (actionId == EditorInfo.IME_ACTION_DONE) {
             if (mListener != null) {
-                mListener.onFinishEditDialog(mEditText.getText().toString());
+                mListener.onFinishEditDialog(editMessage.getText().toString());
             }
             this.dismiss();
             return true;
@@ -81,7 +81,7 @@ public class DialogEditVisaDialog extends DialogFragment implements OnEditorActi
     public void onClick(View view){
         switch (view.getId()){
             case R.id.btn_ok:
-                mListener.onFinishEditDialog(mEditText.getText().toString());
+                mListener.onFinishEditDialog(editMessage.getText().toString());
             case R.id.btn_cancel:
             default:
                 this.dismiss();
