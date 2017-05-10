@@ -6,16 +6,20 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
+import com.shsl.foody.view.lam.AccountFragment;
+import com.shsl.foody.view.lam.ManageFragment;
+import com.shsl.foody.view.lam.StatisticFragment;
+import com.shsl.foody.view.lam.StatusFragment;
 
 
-public class MainActivity extends AppCompatActivity implements AHBottomNavigation.OnTabSelectedListener{
+public class MainActivityA extends AppCompatActivity implements AHBottomNavigation.OnTabSelectedListener{
 
    AHBottomNavigation bottomNavigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_maina);
 
         bottomNavigation= (AHBottomNavigation) findViewById(R.id.myBottomNavigation_ID);
         bottomNavigation.setOnTabSelectedListener(this);

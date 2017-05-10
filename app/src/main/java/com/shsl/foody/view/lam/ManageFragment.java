@@ -1,8 +1,5 @@
 package com.shsl.foody;
 
-import android.content.ContentResolver;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,12 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.shsl.foody.R;
+import com.shsl.foody.view.lam.MenuFood;
 
 import java.util.ArrayList;
 
 
-public class StatisticFragment extends Fragment {
+public class ManageFragment extends Fragment {
 
     ArrayList<MenuFood> listitems = new ArrayList<>();
     RecyclerView MyRecyclerView;
@@ -66,7 +65,7 @@ public class StatisticFragment extends Fragment {
         public MyViewHolder onCreateViewHolder(ViewGroup parent,int viewType) {
             // create a new view
             View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.recycle_items_menu, parent, false);
+                    .inflate(R.layout.recycle_items_shopping, parent, false);
             MyViewHolder holder = new MyViewHolder(view);
             return holder;
         }
@@ -76,8 +75,6 @@ public class StatisticFragment extends Fragment {
 
             holder.titleTextView.setText(list.get(position).getCardName());
             holder.coverImageView.setImageResource(list.get(position).getImageResourceId());
-            holder.coverImageView.setTag(list.get(position).getImageResourceId());
-            holder.likeImageView.setTag(R.drawable.ic_like);
 
         }
 
@@ -98,59 +95,9 @@ public class StatisticFragment extends Fragment {
             super(v);
             titleTextView = (TextView) v.findViewById(R.id.titleTextView);
             coverImageView = (ImageView) v.findViewById(R.id.foodImageView);
-            likeImageView = (ImageView) v.findViewById(R.id.likeImageView);
-            shareImageView = (ImageView) v.findViewById(R.id.iv_shopping);
-            likeImageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-
-                    int id = (int)likeImageView.getTag();
-                    if( id == R.drawable.ic_like){
-
-                        likeImageView.setTag(R.drawable.ic_liked);
-                        likeImageView.setImageResource(R.drawable.ic_liked);
-
-                        Toast.makeText(getActivity(),titleTextView.getText()+" added to favourites",Toast.LENGTH_SHORT).show();
-
-                    }else{
-
-                        likeImageView.setTag(R.drawable.ic_like);
-                        likeImageView.setImageResource(R.drawable.ic_like);
-                        Toast.makeText(getActivity(),titleTextView.getText()+" removed from favourites",Toast.LENGTH_SHORT).show();
-
-
-                    }
-
-                }
-            });
 
 
 
-            shareImageView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-
-
-
-
-
-                    Uri imageUri = Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE +
-                            "://" + getResources().getResourcePackageName(coverImageView.getId())
-                            + '/' + "drawable" + '/' + getResources().getResourceEntryName((int)coverImageView.getTag()));
-
-
-                    Intent shareIntent = new Intent();
-                    shareIntent.setAction(Intent.ACTION_SEND);
-                    shareIntent.putExtra(Intent.EXTRA_STREAM,imageUri);
-                    shareIntent.setType("image/jpeg");
-                    startActivity(Intent.createChooser(shareIntent, getResources().getText(R.string.send_to)));
-
-
-
-                }
-            });
 
 
 

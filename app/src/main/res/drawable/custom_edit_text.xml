@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- duong vien -->
+    <stroke
+        android:width="0dp"
+        android:color="#C1CCD7"/>
+    <corners
+        android:topLeftRadius="7dp"
+        android:topRightRadius="7dp"
+        android:bottomLeftRadius="7dp"
+        android:bottomRightRadius="7dp"/>
+    <padding
+
+        android:bottom="0dp"/>
+
+    <solid android:color="#FFFFFF"/>
+
+</shape>
