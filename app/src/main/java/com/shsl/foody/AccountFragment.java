@@ -84,7 +84,7 @@ public class AccountFragment extends Fragment {
         tvname=(TextView)view.findViewById(R.id.TxtName);
         tvrole=(TextView)view.findViewById(R.id.role);
         tvreview=(TextView)view.findViewById(R.id.number);
-
+        image=(ImageView)view.findViewById(R.id.imageView);
 
         account();
 
@@ -97,6 +97,7 @@ public class AccountFragment extends Fragment {
         tvname.setText(String.valueOf(names));
         tvrole.setText(String.valueOf(roles));
         tvreview.setText(String.valueOf(reviews));
+        image.setImageResource(R.drawable.heo);
 
         return view;
     }
