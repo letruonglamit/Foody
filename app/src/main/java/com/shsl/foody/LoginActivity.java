@@ -79,7 +79,10 @@ public class LoginActivity extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-                
+                Intent intent = new Intent(context,MainActivity.class);
+                intent.putExtra("username",username);
+                intent.putExtra("password",password);
+                startActivity(intent);
 
             }
         });

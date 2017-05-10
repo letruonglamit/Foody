@@ -1,15 +1,15 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<!-- TODO: Update blank fragment layout -->
+<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="70dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.shsl.foody.AccountFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-
         android:weightSum="1">
 
         <LinearLayout
@@ -20,6 +20,7 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="20dp"
@@ -30,11 +31,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="45dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/tv_address"
+                    android:id="@+id/TxtName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Na răng to"
@@ -42,7 +43,7 @@
                     android:textSize="22sp" />
 
                 <TextView
-                    android:id="@+id/tv_coin"
+                    android:id="@+id/role"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -56,7 +57,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/tv_coin"
+                    android:layout_below="@+id/role"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1"
@@ -65,9 +66,10 @@
                     android:src="@drawable/ic_star" />
 
                 <TextView
+                    android:id="@+id/number"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:layout_below="@+id/tv_coin"
+                    android:layout_below="@+id/role"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_toEndOf="@+id/btn_star"
@@ -85,35 +87,41 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/info"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:background="#EEEEEE"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:background="#E0E0E0"
                 android:text="Thông tin làm việc"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textColor="#FF7043"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+
+                />
 
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/lb_table"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="35dp"
+                android:layout_marginTop="50dp"
                 android:text="Số bàn đã đặt"
                 android:textColor="#212121"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:gravity="center_vertical"/>
 
             <TextView
+                android:id="@+id/txt_number"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_alignTop="@+id/textView3"
+                android:layout_alignTop="@+id/lb_table"
                 android:layout_marginLeft="200dp"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:text="32"
                 android:textColor="#212121" />
             />
@@ -122,14 +130,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#FF5722"></LinearLayout>
+            android:background="#9E9E9E"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            ></LinearLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/lb_money"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -141,14 +153,15 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/txt_money"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="11dp"
                 android:layout_marginLeft="200dp"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:text="6 triệu"
                 android:textColor="#212121"
-                android:layout_alignTop="@+id/textView4"
+                android:layout_alignTop="@+id/lb_money"
                 android:layout_alignParentEnd="true" />
 
 
@@ -157,14 +170,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#FF5722"></LinearLayout>
+            android:background="#9E9E9E"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"></LinearLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/lb_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -176,15 +192,17 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/txt_time"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="11dp"
                 android:layout_marginLeft="200dp"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:text="20 giờ"
                 android:textColor="#212121"
-                android:layout_alignTop="@+id/textView4"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignTop="@+id/lb_time"
+                android:layout_alignParentEnd="true"
+                />
 
         </RelativeLayout>
 
@@ -193,39 +211,44 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/info1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
                 android:layout_marginTop="14dp"
-                android:background="#EEEEEE"
+                android:background="#E0E0E0"
                 android:text="Thông tin cơ bản"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textColor="#FF7043"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
 
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/lb_phone"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="65dp"
                 android:text="Số điện thoại"
                 android:textColor="#212121"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                android:gravity="center_vertical"/>
 
             <TextView
+                android:id="@+id/txt_phone"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:gravity="center"
                 android:text="0905440500"
                 android:textColor="#212121"
-                android:layout_alignTop="@+id/textView3"
+                android:layout_alignTop="@+id/lb_phone"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="14dp" />
+                android:layout_marginEnd="14dp"
+                android:foregroundGravity="center_horizontal"/>
             />
 
         </RelativeLayout>
@@ -233,14 +256,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#FF5722"></LinearLayout>
+            android:background="#9E9E9E"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"></LinearLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/lb_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -252,14 +278,15 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:layout_width="100dp"
+                android:id="@+id/txt_address"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="11dp"
                 android:layout_marginLeft="200dp"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:text="193 Nguyễn Lương Bằng,ĐN"
                 android:textColor="#212121"
-                android:layout_alignTop="@+id/textView4"
+                android:layout_alignTop="@+id/lb_address"
                 android:layout_alignParentEnd="true" />
 
 
@@ -268,14 +295,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#FF5722"></LinearLayout>
+            android:background="#9E9E9E"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"></LinearLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/lb_sex"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -287,14 +317,15 @@
                 android:textSize="18sp" />
 
             <TextView
+                android:id="@+id/txt_sex"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="11dp"
                 android:layout_marginLeft="200dp"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:text="Nữ"
                 android:textColor="#212121"
-                android:layout_alignTop="@+id/textView4"
+                android:layout_alignTop="@+id/lb_sex"
                 android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
@@ -302,5 +333,4 @@
 
 
     </LinearLayout>
-
-</FrameLayout>
+</ScrollView>
