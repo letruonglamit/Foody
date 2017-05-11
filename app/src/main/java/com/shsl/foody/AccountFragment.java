@@ -27,7 +27,8 @@ public class AccountFragment extends Fragment {
     private String sex="nu", sexs;
     private String name="Hieu thai son", names;
     private String role="cashier", roles;
-    private TextView tvnum,tvmoney,tvtime,tvphone,tvadd,tvsex, tvname,tvrole,tvreview;
+    private TextView textViewNum, textViewMoney, textViewTime, textViewPhone, textViewAdd,
+                        textViewSex, textViewName, textViewRole, textViewReview;
 
 
 
@@ -75,28 +76,28 @@ public class AccountFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_account, container, false);
-        tvnum=(TextView)view.findViewById(R.id.txt_number);
-        tvmoney=(TextView)view.findViewById(R.id.txt_money);
-        tvtime=(TextView)view.findViewById(R.id.txt_time);
-        tvphone=(TextView)view.findViewById(R.id.txt_phone);
-        tvadd=(TextView)view.findViewById(R.id.txt_address);
-        tvsex=(TextView)view.findViewById(R.id.txt_sex);
-        tvname=(TextView)view.findViewById(R.id.TxtName);
-        tvrole=(TextView)view.findViewById(R.id.role);
-        tvreview=(TextView)view.findViewById(R.id.number);
+        textViewNum =(TextView)view.findViewById(R.id.txt_number);
+        textViewMoney =(TextView)view.findViewById(R.id.txt_money);
+        textViewTime =(TextView)view.findViewById(R.id.txt_time);
+        textViewPhone =(TextView)view.findViewById(R.id.txt_phone);
+        textViewAdd =(TextView)view.findViewById(R.id.txt_address);
+        textViewSex =(TextView)view.findViewById(R.id.txt_sex);
+        textViewName =(TextView)view.findViewById(R.id.TxtName);
+        textViewRole =(TextView)view.findViewById(R.id.role);
+        textViewReview =(TextView)view.findViewById(R.id.number);
         image=(ImageView)view.findViewById(R.id.imageView);
 
         account();
 
-        tvnum.setText(String.valueOf(nums));
-        tvmoney.setText(String.valueOf(moneys));
-        tvtime.setText(String.valueOf(times));
-        tvphone.setText(String.valueOf(phones));
-        tvadd.setText(String.valueOf(adds));
-        tvsex.setText(String.valueOf(sexs));
-        tvname.setText(String.valueOf(names));
-        tvrole.setText(String.valueOf(roles));
-        tvreview.setText(String.valueOf(reviews));
+        textViewNum.setText(String.valueOf(nums));
+        textViewMoney.setText(String.valueOf(moneys));
+        textViewTime.setText(String.valueOf(times));
+        textViewPhone.setText(String.valueOf(phones));
+        textViewAdd.setText(String.valueOf(adds));
+        textViewSex.setText(String.valueOf(sexs));
+        textViewName.setText(String.valueOf(names));
+        textViewRole.setText(String.valueOf(roles));
+        textViewReview.setText(String.valueOf(reviews));
         image.setImageResource(R.drawable.heo);
 
         return view;
