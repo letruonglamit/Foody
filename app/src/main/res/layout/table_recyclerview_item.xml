@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <LinearLayout
     android:layout_height="100dp"
     android:layout_width="match_parent"
@@ -16,3 +17,22 @@
         android:gravity="center"
         android:layout_gravity="center"/>
 </LinearLayout>
+=======
+<LinearLayout
+    android:layout_height="100dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:background="@drawable/tablet_light"
+        tools:text="0"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+</LinearLayout>
+>>>>>>> origin/quynhanh
