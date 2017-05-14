@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="@drawable/ic_background_food"
+              tools:context="com.shsl.foody.view.le.LoginActivity">
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_fastfood" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:text="Fast Food"
+        android:textColor="#de4103"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#e90909"
+        />
+
+    <EditText
+        android:id="@+id/TxtName"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/duongvien_goctron"
+        android:hint="Username"
+        android:textSize="24sp"
+        android:textColor="#464545"
+        android:inputType="text"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/duongvien_goctron"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        android:paddingLeft="20dp"
+        android:textColor="#464545"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textColor="#262525"
+        android:text="Remember password"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/duongvien_goctron_button"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:backgroundTint="#FFFF5722"/>
+
+    <Button
+        android:id="@+id/button"
+        android:paddingBottom="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:textColor="#0a67e1"
+        android:text="Forgot password" />
+
+
+</LinearLayout>

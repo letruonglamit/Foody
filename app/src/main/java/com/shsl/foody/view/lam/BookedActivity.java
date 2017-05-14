@@ -53,9 +53,6 @@ public class BookedActivity extends AppCompatActivity{
 
     }
 
-
-
-
     private void initData(){
         initDataTemp();
         for(int i=0;i<maxFood;i++){
@@ -90,7 +87,6 @@ public class BookedActivity extends AppCompatActivity{
                 item.setIsfav(0);
                 item.setIsturned(0);
                 bookingList.add(item);
-
                 price+=prices[i];
             }
 
