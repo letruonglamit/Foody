@@ -3,11 +3,14 @@
     <string name="action_settings">Settings</string>
     <string name="send_to">Share</string>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     <string name="error_field_required">This field is required</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 =======
+>>>>>>> origin
     <string name="pikachu">/@Pikachu</string>
 
     <string name="title_activity_welcome">Home Screen</string>
@@ -30,5 +33,74 @@
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
 
+<<<<<<< HEAD
+
+    <!-- Names -->
+    <string-array name="status">
+        <item>Đã đặt</item>
+        <item>Còn trống</item>
+        <item>Đã đặt</item>
+        <item>Đã đặt</item>
+        <item>Còn trống</item>
+        <item>Đã đặt</item>
+    </string-array>
+
+    <!-- Pictures -->
+    <array name="profile_pics">
+        <item>@drawable/ic_table_1</item>
+        <item>@drawable/ic_table_2</item>
+        <item>@drawable/ic_table_3</item>
+        <item>@drawable/ic_table_4</item>
+        <item>@drawable/ic_table_5</item>
+        <item>@drawable/ic_table_6</item>
+    </array>
+
+    <!-- Status -->
+    <string-array name="people">
+        <item>Hiếu thái sơn</item>
+        <item> </item>
+        <item>Lâm tặc</item>
+        <item>Tùng núi</item>
+        <item> </item>
+        <item>Lệ rơi</item>
+    </string-array>
+
+    <!-- Names -->
+    <string-array name="food_name">
+        <item>Nem chua rán</item>
+        <item>Bánh tráng bơ</item>
+        <item>Hồ lô nướng</item>
+        <item>Bánh bao chiên</item>
+        <item>Trà sữa</item>
+    </string-array>
+
+    <!-- number of -->
+    <integer-array name="number_of">
+        <item>1</item>
+        <item>3</item>
+        <item>1</item>
+        <item>4</item>
+        <item>2</item>
+    </integer-array>
+
+    <!-- cost -->
+    <integer-array name="cost">
+        <item>7</item>
+        <item>10</item>
+        <item>10</item>
+        <item>6</item>
+        <item>22</item>
+    </integer-array>
+
+    <string-array name="autocomplete">
+        <item>johnpaul@yahoo.com</item>
+        <item>marykate@yahoo.com</item>
+        <item>kelvinjames@yahoo.com</item>
+        <item>henrysweart@gmail.com</item>
+        <item>gracepowell@yahoo.com</item>
+    </string-array>
+
+=======
 >>>>>>> letruonglam
+>>>>>>> origin
 </resources>

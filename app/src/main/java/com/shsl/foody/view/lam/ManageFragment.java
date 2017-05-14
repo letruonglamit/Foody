@@ -2,20 +2,30 @@ package com.shsl.foody.view.lam;
 
 import android.content.Intent;
 import android.os.Bundle;
+<<<<<<< HEAD
+import android.support.v4.app.Fragment;
+=======
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+>>>>>>> origin
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+<<<<<<< HEAD
+
+import com.shsl.foody.R;
+import com.shsl.foody.view.na.ListTableActivity;
+=======
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.shsl.foody.R;
 
 import java.util.ArrayList;
+>>>>>>> origin
 
 
 public class ManageFragment extends Fragment {
@@ -33,7 +43,11 @@ public class ManageFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
+                Intent intent = new Intent(getContext(), ListTableActivity.class);
+=======
                 Intent intent = new Intent(getContext(), BookingActivity.class);
+>>>>>>> origin
                 startActivity(intent);
             }
         });

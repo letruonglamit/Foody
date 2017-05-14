@@ -9,12 +9,33 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+<<<<<<< HEAD
+import com.shsl.foody.R;
+import com.shsl.foody.view.le.User;
+=======
+>>>>>>> origin
 
 
 /**
  * Created by CuuVuiVe on 5/10/2017.
  */
 
+<<<<<<< HEAD
+public class AccountFragment extends Fragment {
+
+    public ImageView image;
+    private int nums ;
+    private int reviews;
+    private String moneys;
+    private String times;
+    private String adds;
+    private String phones;
+    private String sexs;
+    private String names;
+    private String roles;
+    private TextView textViewNum, textViewMoney, textViewTime, textViewPhone, textViewAdd,
+            textViewSex, textViewName, textViewRole, textViewReview;
+=======
 import com.shsl.foody.R;
 
 public class AccountFragment extends Fragment {
@@ -33,10 +54,15 @@ public class AccountFragment extends Fragment {
                         textViewSex, textViewName, textViewRole, textViewReview;
 
 
+>>>>>>> origin
 
     public  void account()
     {
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin
         User newuser=new User();
 
         newuser.setReview(review);
@@ -69,10 +95,13 @@ public class AccountFragment extends Fragment {
     }
 
 
+<<<<<<< HEAD
+=======
 
 
 
 
+>>>>>>> origin
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

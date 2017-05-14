@@ -53,9 +53,12 @@ public class BookedActivity extends AppCompatActivity{
 
     }
 
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> origin
     private void initData(){
         initDataTemp();
         for(int i=0;i<maxFood;i++){
@@ -90,7 +93,10 @@ public class BookedActivity extends AppCompatActivity{
                 item.setIsfav(0);
                 item.setIsturned(0);
                 bookingList.add(item);
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin
                 price+=prices[i];
             }
 

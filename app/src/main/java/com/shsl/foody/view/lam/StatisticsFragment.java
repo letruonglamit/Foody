@@ -13,6 +13,10 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.shsl.foody.R;
+<<<<<<< HEAD
+import com.shsl.foody.dao.table.TableBinding;
+=======
+>>>>>>> origin
 
 import java.util.ArrayList;
 
@@ -58,6 +62,15 @@ public class StatisticsFragment extends Fragment {
         return rootView;
     }
 
+<<<<<<< HEAD
+
+
+    public void AddValuesToBARENTRY(){
+
+
+        TableBinding tableBinding = new TableBinding();
+        tableBinding.getListPrice();
+=======
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
@@ -95,6 +108,7 @@ public class StatisticsFragment extends Fragment {
 
     public void AddValuesToBARENTRY(){
 
+>>>>>>> origin
         BARENTRY.add(new BarEntry(2f, 0));
         BARENTRY.add(new BarEntry(4f, 1));
         BARENTRY.add(new BarEntry(6f, 2));

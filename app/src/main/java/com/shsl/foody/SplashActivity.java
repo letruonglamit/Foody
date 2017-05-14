@@ -5,6 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+<<<<<<< HEAD
+import com.shsl.foody.view.le.LoginActivity;
+
+=======
+>>>>>>> origin
 public class SplashActivity extends Activity {
 
     // Splash screen timer
@@ -21,7 +26,11 @@ public class SplashActivity extends Activity {
             public void run() {
                 // This method will be executed once the timer is over
                 // Start your app main activity
+<<<<<<< HEAD
+                Intent i = new Intent(SplashActivity.this, LoginActivity.class);
+=======
                 Intent i = new Intent(SplashActivity.this, WelcomeActivity.class);
+>>>>>>> origin
                 startActivity(i);
 
                 // close this activity
