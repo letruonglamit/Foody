@@ -1,4 +1,4 @@
-package com.shsl.foody;
+package com.shsl.foody.view.lam;
 
 public class MenuFood {
 
