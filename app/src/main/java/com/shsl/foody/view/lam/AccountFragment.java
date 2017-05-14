@@ -1,4 +1,4 @@
-package com.shsl.foody;
+package com.shsl.foody.view.lam;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -14,6 +14,8 @@ import android.widget.TextView;
 /**
  * Created by CuuVuiVe on 5/10/2017.
  */
+
+import com.shsl.foody.R;
 
 public class AccountFragment extends Fragment {
 

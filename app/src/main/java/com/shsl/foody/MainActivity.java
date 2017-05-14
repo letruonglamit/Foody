@@ -6,6 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
+import com.shsl.foody.view.lam.AccountFragment;
+import com.shsl.foody.view.lam.ManageFragment;
+import com.shsl.foody.view.lam.StatisticsFragment;
+import com.shsl.foody.view.lam.StatusFragment;
 
 
 public class MainActivity extends AppCompatActivity implements AHBottomNavigation.OnTabSelectedListener{
@@ -15,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_maina);
 
         bottomNavigation= (AHBottomNavigation) findViewById(R.id.myBottomNavigation_ID);
         bottomNavigation.setOnTabSelectedListener(this);
@@ -57,11 +61,12 @@ public class MainActivity extends AppCompatActivity implements AHBottomNavigatio
             getSupportFragmentManager().beginTransaction().replace(R.id.content_id, manageFragment).commit();
         }else  if (position==2)
         {
+            StatisticsFragment statisticFragment =new StatisticsFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_id, statisticFragment).commit();
+        }else if(position == 3){
+
             AccountFragment accountFragment =new AccountFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.content_id, accountFragment).commit();
-        }else if(position == 3){
-            StatisticFragment statisticFragment =new StatisticFragment();
-            getSupportFragmentManager().beginTransaction().replace(R.id.content_id, statisticFragment).commit();
         }
 
     }
