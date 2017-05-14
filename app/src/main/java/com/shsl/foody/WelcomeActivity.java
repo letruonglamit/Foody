@@ -30,7 +30,10 @@ public class WelcomeActivity extends AppCompatActivity {
     private Button btnSkip, btnNext;
     private PrefManager prefManager;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,7 +86,12 @@ public class WelcomeActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
 
+=======
+                // checking for last page
+                // if last page home screen will be launched
+>>>>>>> origin
                 int current = getItem(+1);
                 if (current < layouts.length) {
                     // move to next screen
@@ -154,7 +162,13 @@ public class WelcomeActivity extends AppCompatActivity {
         }
     };
 
+<<<<<<< HEAD
 
+=======
+    /**
+     * Making notification bar transparent
+     */
+>>>>>>> origin
     private void changeStatusBarColor() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
@@ -163,7 +177,13 @@ public class WelcomeActivity extends AppCompatActivity {
         }
     }
 
+<<<<<<< HEAD
 
+=======
+    /**
+     * View pager adapter
+     */
+>>>>>>> origin
     public class MyViewPagerAdapter extends PagerAdapter {
         private LayoutInflater layoutInflater;
 

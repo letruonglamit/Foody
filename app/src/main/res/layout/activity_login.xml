@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
               xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
@@ -20,12 +21,30 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="10dp"
+=======
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.shsl.foody.LoginActivity">
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+>>>>>>> origin
         android:scaleType="centerCrop"
         android:src="@drawable/ic_fastfood" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:textSize="28sp"
+=======
+        android:textSize="18sp"
+>>>>>>> origin
         android:text="Fast Food"
         android:textColor="#de4103"
         android:textStyle="bold"/>
@@ -36,11 +55,15 @@
         android:layout_height="20dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
+<<<<<<< HEAD
         android:textColor="#e90909"
+=======
+>>>>>>> origin
         />
 
     <EditText
         android:id="@+id/TxtName"
+<<<<<<< HEAD
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
@@ -68,21 +91,60 @@
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="300dp"
+=======
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/duongvien_goctron"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingLeft="20dp" />
+
+
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/duongvien_goctron"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="230dp"
+>>>>>>> origin
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:textColor="#262525"
         android:text="Remember password"
+<<<<<<< HEAD
         android:textSize="22sp" />
+=======
+        android:textSize="15sp" />
+>>>>>>> origin
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="180dp"
+<<<<<<< HEAD
         android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/duongvien_goctron_button"
         android:text="Login"
         android:textColor="#ffffff"
         android:textSize="22sp"
+=======
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/duongvien_goctron"
+        android:text="Login"
+        android:textColor="#000000"
+>>>>>>> origin
         android:backgroundTint="#FFFF5722"/>
 
     <Button
@@ -96,4 +158,8 @@
         android:text="Forgot password" />
 
 
+<<<<<<< HEAD
 </LinearLayout>
+=======
+</LinearLayout>
+>>>>>>> origin

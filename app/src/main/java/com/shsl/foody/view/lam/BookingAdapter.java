@@ -77,6 +77,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyViewHo
         holder.coverImageView.setImageResource(bookingList.get(position).getImageResourceId());
 //        holder.txtPrice.setText(bookingList.get(position).getPrice());
 
+<<<<<<< HEAD
         holder.coverImageView.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -87,6 +88,18 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.MyViewHo
                 holder.txtBooked.setText(b);
             }
         });
+=======
+//        holder.coverImageView.setOnClickListener(new View.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View v) {
+//                String a = holder.txtBooked.getText().toString();
+//                int abc = Integer.parseInt(a)+1;
+//                String b = String.valueOf(abc);
+//                holder.txtBooked.setText(b);
+//            }
+//        });
+>>>>>>> origin
 
     }
 

@@ -2,6 +2,15 @@
     <string name="app_name">Foody</string>
     <string name="action_settings">Settings</string>
     <string name="send_to">Share</string>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <string name="error_field_required">This field is required</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+=======
+>>>>>>> origin
     <string name="pikachu">/@Pikachu</string>
 
     <string name="title_activity_welcome">Home Screen</string>
@@ -24,6 +33,7 @@
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
 
+<<<<<<< HEAD
 
     <!-- Names -->
     <string-array name="status">
@@ -90,4 +100,7 @@
         <item>gracepowell@yahoo.com</item>
     </string-array>
 
+=======
+>>>>>>> letruonglam
+>>>>>>> origin
 </resources>

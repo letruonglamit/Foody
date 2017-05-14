@@ -1,10 +1,19 @@
 <!-- TODO: Update blank fragment layout -->
+<<<<<<< HEAD
 <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginBottom="70dp"
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools">
+=======
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="70dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shsl.foody.AccountFragment">
+>>>>>>> origin
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,16 +24,23 @@
         <android.support.constraint.ConstraintLayout
             android:id="@+id/iv_ava_pf"
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="160dp"
             android:background="@drawable/background"
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="0dp">
+=======
+            android:layout_height="140dp"
+            android:background="#FBE9E7"
+            android:orientation="horizontal">
+>>>>>>> origin
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+<<<<<<< HEAD
 
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="40dp"
@@ -133,6 +149,99 @@
                 android:textSize="18sp"
                 android:gravity="center_vertical"/>
 
+=======
+                android:layout_margin="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/quynh_anh" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="45dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TxtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Na răng to"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:text="Server"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_star"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/role"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#FF5722"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_star" />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/role"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/btn_star"
+                    android:text="3"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:background="#E0E0E0"
+                android:text="Thông tin làm việc"
+                android:textColor="#FF7043"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:id="@+id/lb_table"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:text="Số bàn đã đặt"
+                android:textColor="#212121"
+                android:textSize="18sp"
+                android:gravity="center_vertical"/>
+
+>>>>>>> origin
             <TextView
                 android:id="@+id/txt_number"
                 android:layout_width="100dp"
@@ -162,6 +271,7 @@
             <TextView
                 android:id="@+id/lb_money"
                 android:layout_width="wrap_content"
+<<<<<<< HEAD
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
@@ -214,6 +324,60 @@
                 android:id="@+id/txt_time"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+=======
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:text="Số tiền thanh toán"
+                android:textColor="#212121"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_money"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="11dp"
+                android:layout_marginLeft="200dp"
+                android:gravity="center_horizontal"
+                android:text="6 triệu"
+                android:textColor="#212121"
+                android:layout_alignTop="@+id/lb_money"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9E9E9E"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lb_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="14dp"
+                android:text="Số giờ làm việc"
+                android:textColor="#212121"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+>>>>>>> origin
                 android:layout_marginEnd="11dp"
                 android:layout_marginLeft="200dp"
                 android:gravity="center_horizontal"
@@ -352,4 +516,8 @@
 
 
     </LinearLayout>
+<<<<<<< HEAD
 </ScrollView>
+=======
+</ScrollView>
+>>>>>>> origin
